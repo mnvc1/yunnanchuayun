@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="云南茶韵｜访客留言：提交你的想法与建议。" />
+    <title>云南茶韵｜留言</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (() => {
+        const t = localStorage.getItem("yntea_theme");
+        if (t === "dark") document.documentElement.classList.add("theme-dark");
+      })();
+    </script>
+    <script defer src="js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js" defer></script>
+    <script defer src="js/login-gate.js"></script>
+    <script defer src="js/message.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main"></a>
+    <div id="site-nav"></div>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="container">
+          <p class="badge">Guestbook</p>
+          <h1>访客留言</h1>
+          <p class="lead"></p>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel" style="max-width: 640px; margin: 0 auto">
+            <p id="messageTip" class="muted small" role="status" aria-live="polite" hidden></p>
+            <form id="messageForm" class="form">
+              <div class="field">
+                <label for="msgNickname">昵称</label>
+                <input id="msgNickname" name="nickname" type="text" maxlength="64" required autocomplete="nickname" />
+              </div>
+              <div class="field">
+                <label for="msgContent">留言内容</label>
+                <textarea id="msgContent" name="content" rows="6" maxlength="2000" required placeholder="最多 2000 字"></textarea>
+              </div>
+              <div class="field">
+                <label for="msgPhone">手机号（选填）</label>
+                <input id="msgPhone" name="phone" type="tel" inputmode="numeric" maxlength="11" placeholder="11 位中国大陆手机号" />
+              </div>
+              <div class="field">
+                <label for="msgEmail">邮箱（选填）</label>
+                <input id="msgEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" />
+              </div>
+              <div class="form-actions">
+                <button class="btn primary" type="submit">提交留言</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand-line">云南茶韵 · Yunnan Tea</div>
+        </div>
+        <div class="muted">© <span id="year"></span></div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="云南茶文化：茶马古道、非遗工艺、饮茶礼仪与当代生活美学。" />
+    <title>云南茶韵｜文化故事</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (() => {
+        const t = localStorage.getItem("yntea_theme");
+        if (t === "dark") document.documentElement.classList.add("theme-dark");
+      })();
+    </script>
+    <script defer src="js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js" defer></script>
+    <script defer src="js/login-gate.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div id="site-nav"></div>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="container">
+          <p class="badge">Culture & Story</p>
+          <h1>茶与云南：从路与人，到器与味</h1>
+          <p class="lead">
+            云南的茶文化并不只在杯里，也在山川、路网、交易与日常生活的细节里。
+          </p>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container two-col">
+          <article class="prose">
+            <h2>茶马古道：一条路上的味道交换</h2>
+            <p>
+              茶马古道连接了山地与高原，茶叶沿着驿道走向更远的地方，也带回了不同地区的器物、香料和生活方式。
+            </p>
+            <div class="callout">
+              <div class="callout-title">整条路线图</div>
+              <p class="muted">
+                <li> 整条路线贯穿云南主要茶区（普洱、保山、腾冲、芒市）和历史茶马古道重镇（大理、丽江、香格里拉），是典型的滇藏茶马古道南段—北段走向。</li>
+              </p>
+            </div>
+          </article>
+
+          <aside class="media-card">
+            <img
+              src="assets/images/culture-1.jpg"
+              alt="古道与驿站（ culture-1.jpg ）"
+            />
+            <div class="media-card-body">
+              <div class="media-card-title"></div>
+              <div class="muted">
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <header class="section-head">
+            <h2>工艺与风土：香气从哪里来？</h2>
+          </header>
+
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-body">
+                <h3>风土</h3>
+                <p class="muted">海拔、温差、土壤与生态，决定了叶片的“底子”。</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-body">
+                <h3>工艺</h3>
+                <p class="muted">杀青、揉捻、发酵、干燥的组合，塑造香气类型与口感。</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-body">
+                <h3>风味</h3>
+                <p class="muted">从“花果蜜”到“木质陈香”，你闻到的是时间与技艺。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container three-col">
+          <article class="mini">
+            <h3>饮茶礼仪</h3>
+            <p class="muted">温杯、投茶、注水、出汤，动作简洁但强调专注与尊重。</p>
+          </article>
+          <article class="mini">
+            <h3>器与美学</h3>
+            <p class="muted">盖碗、紫砂、白瓷，各自适配不同香气与保温需求。</p>
+          </article>
+          <article class="mini">
+            <h3>当代生活</h3>
+            <p class="muted">冷泡、奶茶、特调，也是一种“传播”，关键是保留品质与来源。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="brand-line">云南茶韵 · Yunnan Tea</div>
+        <div class="muted">
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="茶文化：云南茶史、工艺与冲泡礼仪的简明介绍。" />
+    <title>云南茶韵｜茶文化</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (() => {
+        const t = localStorage.getItem("yntea_theme");
+        if (t === "dark") document.documentElement.classList.add("theme-dark");
+      })();
+    </script>
+    <script defer src="js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js" defer></script>
+    <script defer src="js/login-gate.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div id="site-nav"></div>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="container">
+          <p class="badge">Tea Culture</p>
+          <h1>茶文化：从茶山到茶席</h1>
+          <p class="lead"></p>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container two-col">
+          <section class="panel prose">
+            <h2>一杯茶的三条路线</h2>
+            <figure class="culture-inline-figure">
+              <img
+                src="assets/images/tea-culture-three-routes.jpg"
+                alt="一杯茶的三条路线配图"
+                width="960"
+                height="420"
+                loading="lazy"
+              />
+              <figcaption class="muted small">
+              </figcaption>
+            </figure>
+            <p>
+              地理线索：从西双版纳古茶山到高黎贡山，茶树分布演绎立体生态；历史线索：茶马古道连接藏彝走廊，千年贸易路沉淀文明对话；人文线索：布朗族酸茶与傣族竹筒茶，杯中盛满26个民族的生存智慧。
+            </p>
+            <div class="callout">
+              <div class="callout-title"></div>
+              <div class="muted small"></div>
+            </div>
+          </section>
+
+          <aside class="panel">
+            <h2 class="panel-title">快速导航</h2>
+            <ul class="list">
+              <li><a href="tea.html"><b>名茶图鉴</b></a>：普洱茶生茶清香甘爽，霸气回甘；熟茶陈香醇厚，温和养胃。滇红汤艳金毫，果蜜香馥郁，滋味浓厚鲜爽。滇绿清雅浓醇，入口鲜爽回甘。月光白一芽两叶，黑白相间，蜜香甜润。下关沱茶碗臼紧压，香醇耐泡，茶气十足。</li>
+              <li><a href="routes.html"><b>茶旅路线</b></a>：临沧易武古茶山—勐海大益庄园—景迈山翁基古寨—普洱那柯里茶马驿站。一路吃茶餐、住茶宿、访茶王，感受从茶园到茶杯的深度旅程。</li>
+              <li><a href="new.html"><b>新品推荐</b></a>：普洱茶,红茶布朗山生普，兰花香足，力与柔并存，花果拼配，散装便携，甘润清甜。</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>三段小时间线</h2>
+            <p>用卡片化方式讲清楚“工艺—风味—冲泡”。</p>
+          </div>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-body">
+                <h3>采与制：鲜叶到干茶</h3>
+                <div class="muted small">杀青、揉捻、发酵、干燥……每一步都在塑造香气与口感。</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-body">
+                <h3>藏与陈：时间的味道</h3>
+                <div class="muted small">普洱等茶类在合适仓储下会呈现更圆润的层次感。</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-body">
+                <h3>器与水：冲泡的变量</h3>
+                <div class="muted small">水温、投茶量、出汤速度与器具材质，都影响最终风味。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2></h2>
+            <p></p>
+          </div>
+
+          <div class="three-col">
+            <article class="media-card">
+              <img src="assets/images/culture-hero.jpg" alt="茶山（图片占位）" loading="lazy" onerror="this.remove();" />
+              <div class="media-card-body">
+                <div class="media-card-title">茶山与生态</div>
+                <div class="muted small">补充茶山环境、海拔、气候与生态种植理念。</div>
+              </div>
+            </article>
+            <article class="media-card">
+              <img src="assets/images/culture-craft.jpg" alt="制茶（图片占位）" loading="lazy" onerror="this.remove();" />
+              <div class="media-card-body">
+                <div class="media-card-title">制茶工艺</div>
+                <div class="muted small">用简洁小段落介绍工艺步骤与带来的风味变化。</div>
+              </div>
+            </article>
+            <article class="media-card">
+              <img src="assets/images/culture-ceremony.jpg" alt="茶席（图片占位）" loading="lazy" onerror="this.remove();" />
+              <div class="media-card-body">
+                <div class="media-card-title">茶席礼仪</div>
+                <div class="muted small">写一些茶席礼仪、待客之道、冲泡习惯等内容。</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="brand-line">云南茶韵 · Yunnan Tea</div>
+        <div class="muted"></div>
+      </div>
+    </footer>
+  </body>
+</html>
+

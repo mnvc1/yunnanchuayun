@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="云南名茶图鉴：普洱、滇红、白茶等，附风味关键词与冲泡建议。" />
+    <title>云南茶韵｜名茶图鉴</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (() => {
+        const t = localStorage.getItem("yntea_theme");
+        if (t === "dark") document.documentElement.classList.add("theme-dark");
+      })();
+    </script>
+    <script defer src="js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js" defer></script>
+    <script defer src="js/login-gate.js"></script>
+    <script defer src="js/tea.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div id="site-nav"></div>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="container">
+          <p class="badge">Tea Atlas</p>
+          <h1>名茶图鉴：用关键词认识滇茶</h1>
+          <p class="lead"></p>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <div class="toolbar">
+            <div class="segmented" role="tablist" aria-label="茶类筛选">
+              <button class="seg-btn is-active" type="button" data-filter="all">全部</button>
+              <button class="seg-btn" type="button" data-filter="puer">普洱</button>
+              <button class="seg-btn" type="button" data-filter="black">滇红</button>
+              <button class="seg-btn" type="button" data-filter="white">白茶</button>
+              <button class="seg-btn" type="button" data-filter="green">绿茶</button>
+            </div>
+
+            <label class="search">
+              <span class="sr-only">搜索</span>
+              <input id="teaSearch" type="search" placeholder="搜索：例如 勐海 / 蜜香 / 古树…" />
+            </label>
+          </div>
+
+          <div id="teaGrid" class="tea-grid" aria-live="polite"></div>
+          <div id="teaEmpty" class="empty muted" hidden>没有匹配的结果，换个关键词试试。</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="brand-line">云南茶韵 · Yunnan Tea</div>
+        <div class="muted"></div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="云南茶叶文化宣传网站：了解滇茶历史、名茶产区、茶旅路线与品鉴知识。" />
+    <title>云南茶韵｜首页</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (() => {
+        const t = localStorage.getItem("yntea_theme");
+        if (t === "dark") document.documentElement.classList.add("theme-dark");
+      })();
+    </script>
+    <script defer src="js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js" defer></script>
+    <script defer src="js/login-gate.js"></script>
+    <script defer src="js/carousel.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <div id="site-nav"></div>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="badge">Yunnan Tea Culture</p>
+              <h1>一叶一世界，滇茶见云南</h1>
+              <p class="lead">
+                从古茶马古道到现代茶旅，带你用更轻松的方式认识云南茶的风土、工艺与故事。
+              </p>
+              <div class="actions">
+                <a class="btn primary" href="culture.html">了解茶文化</a>
+                <a class="btn ghost" href="new.html">看新品推荐</a>
+              </div>
+              <div class="meta-row">
+                <div class="meta">
+                  <div class="meta-k">推荐关键词</div>
+                  <div class="meta-v">普洱 / 滇红 / 白茶 / 古树 / 茶旅</div>
+                </div>
+                <div class="meta">
+                  <div class="meta-k">适用场景</div>
+                  <div class="meta-v">宣传展示 / 课程作业 / 文化普及</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-media">
+              <div class="carousel" data-carousel="home">
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <article class="carousel-slide is-active">
+                      <img
+                        src="assets/images/banner-1.jpg"
+                        alt="云南茶山晨雾"
+                        onerror="this.onerror=null;this.src='https://picsum.photos/id/1018/960/520'"
+                      />
+                      <div class="carousel-caption">
+                        <h3>云海茶山</h3>
+                        <p>晨雾与茶园，让风土成为第一张名片。</p>
+                      </div>
+                    </article>
+                    <article class="carousel-slide">
+                      <img
+                        src="assets/images/banner-2.jpg"
+                        alt="古茶树与采茶"
+                        onerror="this.onerror=null;this.src='https://picsum.photos/id/1015/960/520'"
+                      />
+                      <div class="carousel-caption">
+                        <h3>古树采制</h3>
+                        <p>一芽一叶之间，是时间留下的香气。</p>
+                      </div>
+                    </article>
+                    <article class="carousel-slide">
+                      <img
+                        src="assets/images/banner-3.jpg"
+                        alt="茶汤与器具"
+                        onerror="this.onerror=null;this.src='https://picsum.photos/id/225/960/520'"
+                      />
+                      <div class="carousel-caption">
+                        <h3>品鉴之美</h3>
+                        <p>看汤色、闻香气、观叶底，学会“会喝”。</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <button class="carousel-btn prev" type="button" aria-label="上一张">
+                  ‹
+                </button>
+                <button class="carousel-btn next" type="button" aria-label="下一张">
+                  ›
+                </button>
+                <div class="carousel-dots" aria-label="轮播图指示点"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-head">
+            <h2>快速入口</h2>
+          </header>
+          <div class="card-grid">
+            <a class="card" href="tea.html">
+              <div class="card-icon" aria-hidden="true">🍃</div>
+              <div class="card-title">名茶图鉴</div>
+              <div class="card-desc">普洱、滇红、白茶等的风味与冲泡建议。</div>
+            </a>
+            <a class="card" href="routes.html">
+              <div class="card-icon" aria-hidden="true">🧭</div>
+              <div class="card-title">茶旅路线</div>
+              <div class="card-desc">产区与古道主题路线，适合做宣传页展示。</div>
+            </a>
+            <a class="card" href="culture.html">
+              <div class="card-icon" aria-hidden="true">📜</div>
+              <div class="card-title">文化故事</div>
+              <div class="card-desc">从茶马古道到现代生活美学的演变。</div>
+            </a>
+            <a class="card" href="new.html">
+              <div class="card-icon" aria-hidden="true">✨</div>
+              <div class="card-title">新品推荐</div>
+              <div class="card-desc">当季滇茶与风味、冲泡要点介绍。</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <header class="section-head">
+            <h2>今日推荐：三种滇茶风味</h2>
+          </header>
+
+          <div class="feature-grid">
+            <article class="feature">
+              <div class="feature-tag">厚 · 陈 · 甜</div>
+              <h3>普洱（熟/生）</h3>
+              <p>注重层次与回甘，适合做“越陈越香”的故事型表达。</p>
+              <ul class="list">
+                <li>冲泡：95–100℃，前几泡快出汤</li>
+                <li>关键词：陈香、木质、糯甜、回甘</li>
+              </ul>
+            </article>
+
+            <article class="feature">
+              <div class="feature-tag">蜜 · 花 · 果</div>
+              <h3>滇红</h3>
+              <p>甜润易入口，适合吸引“第一次喝茶的人”。</p>
+              <ul class="list">
+                <li>冲泡：90–95℃，建议先温润</li>
+                <li>关键词：蜜香、花香、甜感、顺滑</li>
+              </ul>
+            </article>
+
+            <article class="feature">
+              <div class="feature-tag">清 · 鲜 · 柔</div>
+              <h3>云南白茶</h3>
+              <p>清爽甘甜、耐泡度高，适合做“慢生活”调性。</p>
+              <ul class="list">
+                <li>冲泡：85–95℃，可闷泡或冷泡</li>
+                <li>关键词：毫香、清甜、花果、清透</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand-line">云南茶韵 · Yunnan Tea</div>
+          <div class="muted">
+          
+          </div>
+        </div>
+        <div class="muted">© <span id="year"></span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

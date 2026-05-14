@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="新品推荐：精选当季滇茶与图文介绍。" />
+    <title>云南茶韵｜新品推荐</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (() => {
+        const t = localStorage.getItem("yntea_theme");
+        if (t === "dark") document.documentElement.classList.add("theme-dark");
+      })();
+    </script>
+    <script defer src="js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js" defer></script>
+    <script defer src="js/login-gate.js"></script>
+    <script defer src="js/new.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div id="site-nav"></div>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="container">
+          <p class="badge">New Arrivals</p>
+          <h1>新品推荐：把春天装进茶汤</h1>
+          <p class="lead"></p>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <div id="newGrid" class="three-col"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="brand-line">云南茶韵 · Yunnan Tea</div>
+        <div class="muted"></div>
+      </div>
+    </footer>
+  </body>
+</html>
+
